@@ -42,7 +42,10 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_rq",
     "import_export",
+    "user",
 ]
+
+AUTH_USER_MODEL = "user.CustomUser"
 
 MIDDLEWARE = [
     "debug_toolbar.middleware.DebugToolbarMiddleware",
